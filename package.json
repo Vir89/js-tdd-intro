@@ -1,37 +1,27 @@
 {
-
-  "dependencies": (){
-	"mocha": "*",
-	  "chai": "*",
-	"description": "",
-    "express": "^4.17.1"
-  },
-  "name": "tdd1",
+  "name": "js-tdd-intro",
   "version": "1.0.0",
   "main": "capitalizeFirstLetters.js",
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyes33/js-tdd-intro.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "bugs": {
-    "url": "https://github.com/V/js-tdd-intro/issues"
-  
-  "devDependencies": {
-    "nodemon": "^2.0.12"
+    "url": "https://github.com/Lyes33/js-tdd-intro/issues"
   },
-   "directories": {
+  "homepage": "https://github.com/Lyes33/js-tdd-intro#readme",
+  "dependencies": {
+    "mocha": "^8.3.2"
+  },
+  "directories": {
     "test": "test"
   },
-  
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vir89/js-tdd-intro.git",
-  
+  "devDependencies": {},
+  "description": ""
 }
-  
-  "homepage": "https://github.com/Vir8/js-tdd-intro#readme",
-    }
- 
