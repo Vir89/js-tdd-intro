@@ -1,4 +1,5 @@
 const assert = require('assert');
+const capitalizeFirstLetters = require('../capitalizeFirstLetters');
 
 //Check if the capitalizeFirstLetters is a function.
 assert.strictEqual(typeof capitalizeFirstLetters, 'function');
@@ -7,7 +8,7 @@ assert.strictEqual(typeof capitalizeFirstLetters, 'function');
 assert.strictEqual(capitalizeFirstLetters.length, 1);
 
 //Check if that capitalizeFirstLetters transforms javascript correctly
-assert.strictEqual(capitalizeFirstLetters('here is virginia'), 'Here Is Virginia');
+assert.strictEqual(capitalizeFirstLetters('i am learning TDD'), 'I Am Learning TDD');
 
 //Check that it works for a 1-character string
 assert.strictEqual(capitalizeFirstLetters('i'), 'I');
@@ -19,16 +20,14 @@ assert.strictEqual(capitalizeFirstLetters('me'), 'Me');
 assert.strictEqual(capitalizeFirstLetters(''), '');
 
 //////////code///////////
-
-function capitalizeFirstLetters(words){
-  let letters = '';
-  for (let i = 0; i < words.length; i++) {
-      if (i === 0) {
-          letters += words[0].toUpperCase();
-      } else {
-          letters+= words[i];
-      }
-  }
-  console.log(capitalizeFirstLetters("i am learning TDD"));
-
+function capitalizeFirst(str) {   
+    const coupleOfWords = str.split(" ");
+    const coupleOfWordsCased = [];
+  
+    for (let i = 0; i < coupleOfWords.length; i++) {
+      const word = coupleOfWords[i];
+      coupleOfWordsCased.push(word[0].toUpperCase() + word.slice(1).toLowerCase());
+    }
+  
+    return coupleOfWordsCased.join(" ");
 }
